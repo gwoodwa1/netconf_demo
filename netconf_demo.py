@@ -58,12 +58,12 @@ def parse_arguments():
     )
     parser.add_argument(
         "--username",
-        default=os.getenv("NETCONF_USERNAME", "admin"),
+        default=os.getenv("GNMI_USERNAME", "admin"),
         help="NETCONF username (default: NETCONF_USERNAME env var or admin)"
     )
     parser.add_argument(
         "--password",
-        default=os.getenv("NETCONF_PASSWORD"),
+        default=os.getenv("GNMI_PASSWORD"),
         help="NETCONF password (default: NETCONF_PASSWORD env var)"
     )
     return parser.parse_args()
